@@ -6,17 +6,13 @@ body, div, span {
 
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  justify-content: center;
   flex-shrink: 0;
   align-content: flex-start;
 
   border: 0 solid black;
   margin: 0;
   padding: 0;
-}
-body, html {
-  width: 100%;
-  height: 100%;
 }
 
 body {
@@ -40,8 +36,54 @@ p {
   font-size: 24px;
 }
 
+a {
+  font-weight: 400;
+  color: #FFF;
+}
+
+a:hover {
+  font-weight: 400;
+  color: #DADADA;
+  text-decoration: none;
+}
+
+/* 第二块区域*/
 .section {
-  height: 100%;
-  width: 100%;
-  /*border: 1px solid #fff;*/
+  /*background-color: rgba(255,0,0,0.3);
+  border: 2px solid #FFF;*/
+  align-items: center;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav > a {
+  padding: 10px;
+}
+
+/* 第二块区域*/
+.section:nth-child(2) {
+  flex-direction: row;
+}
+
+.iphone-demo {
+  flex-grow: 1;
+  height: 100vh;
+  flex-basis: 0;
+  background-color: rgba(255,0,0,0.3);
+}
+
+.feature-description {
+  flex-grow: 1;
+  height: 100vh;
+  flex-basis: 0;
+  background-color: rgba(0,255,0,0.3);
+}
+
+/* 第三块区域*/
+.section:nth-child(3) {
+  flex-direction: row;
 }
