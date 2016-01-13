@@ -1,18 +1,13 @@
 @import "normalize.css";
 @import "common.css";
 
-/* 第一块区域*/
-.section {
-  /*background-color: rgba(255,0,0,0.3);
-  border: 2px solid #FFF;*/
+/* 第一块区域 */
+.section:nth-child(1) {
+  /*border: 2px solid #FFF;*/
+  flex-direction: column;
   height: 100vh;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-}
-
-.section:nth-child(1) {
-  flex-direction: column;
 }
 
 .nav {
@@ -24,15 +19,50 @@
   padding: 10px;
 }
 
-/* 第二块区域*/
-.iphone-demo {
-  flex-grow: 1;
+/* 第二块区域 */
+.section:nth-child(2) {
+  flex-direction: row;
   height: 100vh;
-  flex-basis: 0;
+  align-items: center;
+  justify-content: center;
 }
 
-.feature-description {
+.iphone-demo, .feature-description {
   flex-grow: 1;
-  height: 100vh;
   flex-basis: 0;
+  position: relative;
+}
+
+.iphone-demo > img:nth-child(2) {
+  position: absolute;
+  top: 91px;
+  left: 351px;
+  width: 253px;
+  height: 449px;
+}
+
+/* 第三块区域 */
+.section:nth-child(3) {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* 第四块区域 */
+.section:nth-child(4) {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.android-demo {
+  top: 50%;
+  left: 46%;
+}
+
+.android-demo > img {
+  transform: rotate(-45deg) translate(-50%, -50%) ;
 }

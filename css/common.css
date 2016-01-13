@@ -1,6 +1,10 @@
+/* ReactNative 默认值 */
 body, div, span {
   box-sizing: border-box;
+
+  /******************/
   position: relative;
+  /******************/
 
   display: flex;
   flex-direction: column;
