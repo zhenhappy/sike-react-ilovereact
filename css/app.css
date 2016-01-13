@@ -1,58 +1,18 @@
 @import "normalize.css";
+@import "common.css";
 
-body, div, span {
-  box-sizing: border-box;
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  align-content: flex-start;
-
-  border: 0 solid black;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #1F1E34;
-  color: #FFF;
-  font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 100;
-}
-
-h1 {
-  font-size: 64px;
-  font-weight: 100;
-}
-
-h2 {
-  font-size: 48px;
-  font-weight: 100;
-}
-
-p {
-  font-size: 24px;
-}
-
-a {
-  font-weight: 400;
-  color: #FFF;
-}
-
-a:hover {
-  font-weight: 400;
-  color: #DADADA;
-  text-decoration: none;
-}
-
-/* 第二块区域*/
+/* 第一块区域*/
 .section {
   /*background-color: rgba(255,0,0,0.3);
   border: 2px solid #FFF;*/
-  align-items: center;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.section:nth-child(1) {
+  flex-direction: column;
 }
 
 .nav {
@@ -65,25 +25,14 @@ a:hover {
 }
 
 /* 第二块区域*/
-.section:nth-child(2) {
-  flex-direction: row;
-}
-
 .iphone-demo {
   flex-grow: 1;
   height: 100vh;
   flex-basis: 0;
-  background-color: rgba(255,0,0,0.3);
 }
 
 .feature-description {
   flex-grow: 1;
   height: 100vh;
   flex-basis: 0;
-  background-color: rgba(0,255,0,0.3);
-}
-
-/* 第三块区域*/
-.section:nth-child(3) {
-  flex-direction: row;
 }
