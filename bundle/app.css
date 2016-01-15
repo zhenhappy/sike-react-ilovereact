@@ -513,12 +513,16 @@ a:hover {
   background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
 }
 
+.react-logo {
+  position: relative;
+}
+
 #intro-section > h1 {
   position: relative;
   z-index: 2;
 }
 
-.nav {
+#nav {
   z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
@@ -531,7 +535,7 @@ a:hover {
           flex-direction: row;
 }
 
-.nav > a {
+#nav > a {
   padding: 10px;
 }
 
@@ -618,8 +622,8 @@ a:hover {
 }
 
 .android-demo {
-  top: 50%;
-  left: 46%;
+  top: 51.5%;
+  left: 45.5%;
 }
 
 .android-demo > img {

@@ -16,17 +16,21 @@
 
   <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 
-  <link rel="stylesheet" href="bundle/app.css">
+  <!-- 引入GreenSock动画库 -->
+  <script type="text/javascript" src="//cdn.bootcss.com/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript" src="//cdn.bootcss.com/gsap/latest/TimelineMax.min.js"></script>
 
+  <link rel="stylesheet" href="bundle/app.css">
+  <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
   <div id="content">
 
     <div id="intro-section" class="section">
-      <img class="react-logo" src="img/react-logo.svg"/>
-      <h1>Build Native Apps With React</h1>
       <div class="overlay"></div>
-      <div class="nav">
+      <img id="react-logo" src="img/react-logo.svg"/>
+      <h1>Build Native Apps With React</h1>
+      <div id="nav">
         <a href="#native">Native iOS</a>
         <a href="#touch">Touch Handling</a>
         <a href="#async">Asynchronous</a>
@@ -34,7 +38,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div id="native" class="section">
       <div class="iphone-demo">
         <img src="img/iphone-frame.svg"/>
         <img src="img/tumblr-demo.jpg"/>
@@ -49,7 +53,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div id="touch" class="section">
       <div class="iphone-demo">
         <img src="img/iphone-frame.svg"/>
         <img src="img/swype-demo.jpg"/>
@@ -64,7 +68,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div id="android" class="section">
       <h1>Android Is Here</h1>
       <div class="android-demo">
         <img id="android-robot" src="img/android-robot.svg"/>
@@ -73,7 +77,11 @@
   </div>
 
   <div id="slider-control">
-    <a href="#native" class="active">
+    <a href="#intro-section" class="active">
+      <div class="dot"></div>
+    </a>
+
+    <a href="#native">
       <div class="dot"></div>
     </a>
 
@@ -81,11 +89,7 @@
       <div class="dot"></div>
     </a>
 
-    <a href="#async">
-      <div class="dot"></div>
-    </a>
-
-    <a href="#flex">
+    <a href="#android">
       <div class="dot"></div>
     </a>
   </div>
